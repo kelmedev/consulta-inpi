@@ -1,18 +1,13 @@
 "use client"
 
 import { Hero } from "@/components/hero"
-import { FeaturesList } from "@/components/features-list"
-import { TestimonialSection } from "@/components/testimonial-section"
-import { PricingSection } from "@/components/pricing-section"
-import { FAQ } from "@/components/faq"
-import { CallToAction } from "@/components/call-to-action"
-import { Footer } from "@/components/footer"
+import { Features } from "@/components/features"
+import { HowItWorks } from "@/components/how-it-works"
+import { EducationalSection } from "@/components/educational-section"
+import { Testimonials } from "@/components/testimonials"
+import { CTASection } from "@/components/cta-section"
 import { BackgroundVideo } from "@/components/background-video"
-import { SiteHeader } from "@/components/site-header"
-import { CopywritingSection } from "@/components/copywriting-section"
 import { motion } from "framer-motion"
-import TradeMarkList from "@/components/trade-mark-list"
-import TrademarkTable from "@/components/trade-mark-table"
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -36,30 +31,14 @@ export default function Home() {
 		>
 			<BackgroundVideo />
 			<div className="relative z-10">
-				<SiteHeader />
 				<Hero />
-
 				<motion.div
 					variants={sectionVariants}
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.2 }}
 				>
-				
-				</motion.div>
-				<motion.div
-					variants={sectionVariants}
-					initial="hidden"
-					whileInView="visible"
-					viewport={{ once: true, amount: 0.2 }}
-				></motion.div>
-				<motion.div
-					variants={sectionVariants}
-					initial="hidden"
-					whileInView="visible"
-					viewport={{ once: true, amount: 0.2 }}
-				>
-					<FeaturesList />
+					<Features />
 				</motion.div>
 				<motion.div
 					variants={sectionVariants}
@@ -67,7 +46,7 @@ export default function Home() {
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.2 }}
 				>
-					<TestimonialSection />
+					<HowItWorks />
 				</motion.div>
 				<motion.div
 					variants={sectionVariants}
@@ -75,7 +54,7 @@ export default function Home() {
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.2 }}
 				>
-					<PricingSection />
+					<EducationalSection />
 				</motion.div>
 				<motion.div
 					variants={sectionVariants}
@@ -83,7 +62,7 @@ export default function Home() {
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.2 }}
 				>
-					<FAQ />
+					<Testimonials />
 				</motion.div>
 				<motion.div
 					variants={sectionVariants}
@@ -91,9 +70,8 @@ export default function Home() {
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.2 }}
 				>
-					<CallToAction />
+					<CTASection />
 				</motion.div>
-				<Footer />
 			</div>
 		</motion.main>
 	);

@@ -1,9 +1,10 @@
 "use client"
 
 import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Download } from "lucide-react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { EbookFormModal } from "@/components/ebook-form-modal"
-import { CTAButton } from "@/components/cta-button"
 
 export function EducationalSection() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -43,9 +44,9 @@ export function EducationalSection() {
             </p>
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
-                <CTAButton variant="ebook" icon="download" fullWidth>
-                  Baixar Ebook Grátis
-                </CTAButton>
+                <Button className="cta-button bg-green-600 hover:bg-green-700 text-lg w-full">
+                  <Download className="mr-2 h-5 w-5" /> Baixar Ebook Grátis
+                </Button>
               </DialogTrigger>
               <DialogContent className="bg-blue-950/95 border border-blue-500/20 backdrop-blur-sm">
                 <DialogHeader>
