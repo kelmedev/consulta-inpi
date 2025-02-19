@@ -1,0 +1,12 @@
+.book-container {
+  perspective: 1000px;
+}
+
+.book {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
