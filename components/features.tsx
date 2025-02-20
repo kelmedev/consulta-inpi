@@ -28,13 +28,13 @@ const features = [
 
 export function Features() {
   return (
-    <section className="py-20 px-4">
+    <section className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+          viewport={{ once: true, margin: "-50px" }}
           className="text-4xl sm:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-[#8AB4F8] to-[#C2E7FF] bg-clip-text text-transparent"
         >
           Por que usar nosso Buscador de Marcas?
@@ -46,7 +46,7 @@ export function Features() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1 }}
               className="bg-[#1a1f3e]/50 backdrop-blur-sm border border-blue-500/20 rounded-xl p-6 hover:border-blue-500/40 transition-colors"
             >
               <feature.icon className="w-12 h-12 text-[#8AB4F8] mb-4" />

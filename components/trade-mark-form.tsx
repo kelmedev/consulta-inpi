@@ -30,7 +30,7 @@ export default function TradeMarkForm({ onSubmit }: any) {
 	});
 
 	return (
-		<>
+		<div className="max-width-[400px]">
 			<fieldset>
 				<div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-12 mt-5 md:mt-3">
 					<div className="flex items-center gap-2 relative">
@@ -112,6 +112,6 @@ export default function TradeMarkForm({ onSubmit }: any) {
 					{formik.errors.brandSearch}
 				</div>
 			)}
-		</>
+		</div>
 	);
 }

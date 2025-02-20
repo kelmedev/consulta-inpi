@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export function Hero() {
 	return (
-		<section className="min-h-[90vh] flex flex-col items-center justify-center py-20 px-4 relative">
+		<section className="min-h-[90vh] flex flex-col items-center justify-center py-20 px-4 relative bg-slate-900/50 backdrop-blur-sm">
 			<motion.h1
 				initial={{ opacity: 0, y: -20 }}
 				animate={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export function Hero() {
 				initial={{ opacity: 0, y: -20 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.5, delay: 0.2 }}
-				className="text-lg sm:text-xl mb-12 text-gray-300 text-center max-w-2xl mx-auto"
+				className="text-lg sm:text-xl mb-12 text-blue-200 text-center max-w-2xl mx-auto"
 			>
 				Faça sua consulta no INPI com nossa ferramenta de pesquisa avançada com
 				IA.

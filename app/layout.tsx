@@ -1,7 +1,7 @@
 import type React from "react"
 import "./globals.css"
 import { Inter } from "next/font/google"
-import "./book-styles.css"
+import "@/styles/reset.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -17,12 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={inter.className}>{children}</body>
     </html>
   )
 }
-
-
-
-import './globals.css'

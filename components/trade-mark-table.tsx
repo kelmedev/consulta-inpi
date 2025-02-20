@@ -46,8 +46,8 @@ export default function TrademarkTable({ data }: TradeMarkTable) {
   };
 
   return (
-    <div className="rounded-md border border-slate-700 mt-5 bg-slate-900 w-full overflow-x-auto">
-      <Table className="w-full min-w-[800px]">
+    <div className="rounded-md border border-slate-700 mt-5 bg-slate-900 w-full overflow-x-auto min-h-[400px] max-h-[600px] overflow-y-auto lg:w-[1024px] ">
+      <Table className="w-full">
         <TableHeader>
           <TableRow className="border-b border-slate-700">
             <TableHead className="font-bold text-slate-200 text-sm md:text-base w-[20%]">Marca</TableHead>
