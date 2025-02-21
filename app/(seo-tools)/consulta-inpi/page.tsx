@@ -1,11 +1,11 @@
 "use client"
 
-import { Hero } from "@/components/hero"
-import { Features } from "@/components/features"
-import { HowItWorks } from "@/components/how-it-works"
-import { EducationalSection } from "@/components/educational-section"
-import { Testimonials } from "@/components/testimonials"
-import { CTASection } from "@/components/cta-section"
+import { Hero } from "@/components/(seo-tools)/consulta-inpi/hero"
+import { Features } from "@/components/(seo-tools)/consulta-inpi/features"
+import { HowItWorks } from "@/components/(seo-tools)/consulta-inpi/how-it-works"
+import { EducationalSection } from "@/components/(seo-tools)/consulta-inpi/educational-section"
+import { Testimonials } from "@/components/(seo-tools)/consulta-inpi/testimonials"
+import { CTASection } from "@/components/(seo-tools)/consulta-inpi/cta-section"
 import { motion } from "framer-motion"
 
 const sectionVariants = {

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import TradeMarkList from "./trade-mark-list";
 import type { Metadata } from "next";
-import TradeMarkTable from "./trade-mark-table";
+import TradeMarkTable from "@/components/seo-tools/trade-mark-table";
 
 export const metadata: Metadata = {
 	title: "Buscador de Marcas INPI | Proteja sua marca com facilidade",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export function Hero() {
 	return (
-		<section className="min-h-[90vh] flex flex-col items-center justify-center py-20 px-4 relative bg-slate-900/50 backdrop-blur-sm">
+		<section className="min-h-[100vh] flex flex-col items-center justify-center py-20 px-4 relative bg-slate-900/50 backdrop-blur-sm ">
 			<motion.h1
 				initial={{ opacity: 0, y: -20 }}
 				animate={{ opacity: 1, y: 0 }}

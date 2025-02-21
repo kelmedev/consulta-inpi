@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { EbookFormModal } from "@/components/ebook-form-modal"
+import { EbookFormModal } from "@/components/(seo-tools)/consulta-inpi/ebook-form-modal"
 
 export function EducationalSection() {
   const [isModalOpen, setIsModalOpen] = useState(false)

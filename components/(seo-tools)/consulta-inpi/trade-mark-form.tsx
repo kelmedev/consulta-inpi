@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label";
 
 import { useFormik } from "formik";
 
-import { Popover, PopoverContent } from "./ui/popover";
+import { Popover, PopoverContent } from "../../ui/popover";
 import { PopoverTrigger } from "@radix-ui/react-popover";
 import { InfoIcon } from "lucide-react";
 

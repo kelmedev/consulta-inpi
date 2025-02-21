@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
 
-import despachoData from "../db/mapper-despachos.json";
+import despachoData from "../../../db/mapper-despachos.json";
 
 interface TradeMarkTable {
   data: any;

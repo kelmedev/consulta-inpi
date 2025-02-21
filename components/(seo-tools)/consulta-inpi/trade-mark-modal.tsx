@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Button } from "./ui/button";
-import { Label } from "./ui/label";
+import { Button } from "../../ui/button";
+import { Label } from "../../ui/label";
 import { Dialog, DialogClose, DialogContent, DialogFooter } from "@/components/ui/dialog";
 import { CheckCircle, Loader2, X } from "lucide-react";
 import { useFormik } from "formik";

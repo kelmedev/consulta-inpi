@@ -4,7 +4,7 @@ import type React from "react"
 import { useEffect } from "react"
 import { useRef } from "react"
 import { motion, useScroll, useTransform, useMotionValue } from "framer-motion"
-import { CTAButton } from "@/components/cta-button"
+import { CTAButton } from "@/components/(seo-tools)/consulta-inpi/cta-button"
 
 function CyberGrid({ mouseX, mouseY }: { mouseX: number; mouseY: number }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)

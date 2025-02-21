@@ -1,9 +1,9 @@
 import type React from "react"
 import "./globals.css"
-import { Inter } from "next/font/google"
+import { Manrope } from "next/font/google"
 import "@/styles/reset.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const manrope = Manrope({ subsets: ["latin"] })
 
 export const metadata: import('next').Metadata = {
   title: "Consulta INPI - PPPI",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={manrope.className}>{children}</body>
     </html>
   )
 }
