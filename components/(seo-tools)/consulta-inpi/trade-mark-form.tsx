@@ -30,7 +30,7 @@ export default function TradeMarkForm({ onSubmit }: any) {
 	});
 
 	return (
-		<div className="max-width-[400px]">
+		<div className="max-width-[400px] relative z-10">
 			<fieldset>
 				<div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-12 mt-5 md:mt-3">
 					<div className="flex items-center gap-2 relative">
@@ -96,13 +96,14 @@ export default function TradeMarkForm({ onSubmit }: any) {
 					name="brandSearch"
 					placeholder="Digite o nome da marca para consulta inpi"
 					value={formik.values.brandSearch}
-					onChange={formik.handleChange}
-					className="w-full h-[50px] sm:h-[62px] bg-[#0D1117] border-[#30363D] text-slate-200 placeholder-slate-400 focus:border-[#2845EF] focus:ring-[#2845EF] shadow-none"
+he 					onChange={formik.handleChange}
+					className="w-full h-[50px] sm:h-[62px] bg-[#0D1117]/30 backdrop-blur-sm border-[#30363D] text-slate-200 placeholder-slate-400 focus:border-[#2845EF] focus:ring-[#2845EF] shadow-none transition-all duration-300 hover:bg-[#0D1117]/40"
 				/>
 
 				<Button
 					type="submit"
 					className="bg-[#2845EF] shadow-none font-bold hover:bg-[#2845EF]/90 h-[50px] sm:h-[62px] cursor-pointer rounded-[12px] text-sm md:text-base w-full sm:w-[200px] whitespace-nowrap px-4 md:px-8"
+					loading
 				>
 					Buscar Marca
 				</Button>

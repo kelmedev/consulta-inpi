@@ -154,7 +154,7 @@ export default function TradeMarkModal({
 
   return (
 		<Dialog open={isOpen} onOpenChange={handleClose}>
-			<DialogContent className="sm:max-w-2xl md:max-w-3xl border-2 rounded-xl bg-slate-900">
+			<DialogContent className="sm:max-w-2xl md:max-w-3xl border-2 rounded-xl bg-slate-900/95 backdrop-blur-sm">
 				<DialogClose className="absolute right-4 top-4 stroke-white text-white hover:text-white focus:text-white hover:opacity-90 focus:opacity-90 focus:ring-0 focus:outline-none z-50">
 					<X className="h-4 w-4 border-white text-white stroke-white hover:text-white focus:text-white" />
 					<span className="sr-only">Close</span>

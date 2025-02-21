@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+@custom-variant dark (&:is(.dark *));
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 @layer base {
   :root {
@@ -62,7 +63,6 @@
   }
 }
 
-
 body {
   background: linear-gradient(to bottom, rgb(2, 6, 23), rgb(15, 23, 42));
   color: var(--foreground);
@@ -107,4 +107,13 @@ body {
 
 .animate-beam-light {
   animation: beam-light 2s ease-in-out infinite alternate;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
